@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-07-2025 a las 01:35:32
+-- Tiempo de generación: 18-07-2025 a las 06:31:51
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.0.30
 
@@ -39,11 +39,11 @@ CREATE TABLE `herramientas` (
 --
 
 INSERT INTO `herramientas` (`codigo_herramienta`, `nombre`, `descripcion`, `cantidad_disponible`) VALUES
-('HERR001', 'Taladro Bosch', 'Taladro eléctrico industrial', 1),
-('HERR002', 'Llave Inglesa', 'Llave ajustable 10 pulgadas', 7),
+('HERR001', 'Taladro Bosch', 'Taladro eléctrico industrial', 0),
+('HERR002', 'Llave Inglesa', 'Llave ajustable 10 pulgadas', 6),
 ('HERR003', 'Destornillador', 'Set de destornilladores de precisión', 8),
 ('HERR004', 'Juego de herramientas', 'Juego de herramientas 42 piezas', 8),
-('HERR005', 'Martillo ', 'Martillo 5 pulgadas', 2),
+('HERR005', 'Martillo ', 'Martillo 5 pulgadas', 1),
 ('HERR006', 'Rotomartillo', 'Rotomartillo Dewalk', 4);
 
 -- --------------------------------------------------------
@@ -68,7 +68,10 @@ CREATE TABLE `prestamos` (
 INSERT INTO `prestamos` (`codigo_prestamo`, `codigo_usuario`, `codigo_herramienta`, `fecha_prestamo`, `fecha_devolucion`, `fecha_devolucion_real`) VALUES
 ('PRE003', 'USR004', 'HERR003', '2025-07-16', '2025-07-30', '2025-07-16'),
 ('PRE004', 'USR004', 'HERR002', '2025-07-16', '2025-07-18', '2025-07-16'),
-('PRE005', 'USR004', 'HERR004', '2025-07-16', '2025-07-31', NULL);
+('PRE005', 'USR004', 'HERR004', '2025-07-16', '2025-07-31', NULL),
+('PRE006', 'USR004', 'HERR001', '2025-07-18', '2025-07-18', NULL),
+('PRE007', 'USR004', 'HERR002', '2025-07-18', '2025-07-22', NULL),
+('PRE008', 'USR005', 'HERR005', '2025-07-18', '2025-07-31', NULL);
 
 -- --------------------------------------------------------
 
@@ -91,7 +94,8 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`codigo_usuario`, `nombre`, `apellido`, `email`, `rol`, `password`, `estado`) VALUES
-('USR004', 'Julian', 'Perez ', 'julian@empresa.com', 'admin', '$2y$10$eN1k2S5FJx8jAHzEOb2iR.lPirFpVF.aon2klXh6vUD3yYoAsNEaK', 'activo');
+('USR004', 'Julian', 'Perez ', 'julian@empresa.com', 'admin', '$2y$10$eN1k2S5FJx8jAHzEOb2iR.lPirFpVF.aon2klXh6vUD3yYoAsNEaK', 'activo'),
+('USR005', 'Steven ', 'Mesa', 'steven@empresa.com', 'usuario', '$2y$10$s90EFlP8wWF/MA0mU2clJez2FXaoQ/kykPaWwY/078wzpkuzgOjsq', 'activo');
 
 --
 -- Índices para tablas volcadas
