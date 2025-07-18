@@ -104,7 +104,7 @@ Una vez copiado el proyecto, abra su navegador y acceda al sistema mediante la s
 ## Credenciales de Acceso
 
 ### Administrador
-- **Correo:** julian@empresa  
+- **Correo:** julian@empresa.com
 - **Contraseña:** Bendito24*
 
 ---
