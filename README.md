@@ -1,59 +1,62 @@
-Guía de instalación
+# Guía de Instalación del Proyecto de Préstamo de Herramientas
 
-Para que se pueda usar el proyecto con éxito, se debe contar con las siguientes herramientas.
-Servidor local
-Php
-MySQL
-Navegador web
+Este documento proporciona las instrucciones detalladas para instalar y desplegar correctamente el sistema de préstamo de herramientas en un entorno local.
 
-Recomendamos usar la aplicación de Xammp, porque nos permite tener servidor local, php y MySQL en un mismo paquete.
+---
 
-Con Xammp instalado vamos a dirigirnos al siguiente enlace para hacer la descarga de los archivos correspondientes como lo son: la base de datos y el archivo fuente del programa.
+## ✅ Requisitos Previos
 
-Una vez hayamos ingresado al link anterior se debe ver lo siguiente:
+Para ejecutar el proyecto, asegúrese de contar con las siguientes herramientas instaladas en su sistema:
 
-Descargamos la información correspondiente para el despliegue de la aplicación.
+- Un **servidor local**
+- **PHP**
+- **MySQL**
+- Un **navegador web** moderno
 
+### Recomendación
 
-Una vez se haya descargado la carpeta.zip la descomprimimos y nos deben aparecer las siguientes carpetas:
+Se recomienda utilizar **XAMPP**, ya que incluye Apache, PHP y MySQL en un solo paquete fácil de configurar.
 
-Aquí vamos a tomar el archivo .sql para subirlo a nuestra base de datos.
+---
 
-Antes debemos asegurarnos de que Xammp este prestando los servicios de MySQl y Apache, se debe ver así en la aplicación de Xammp:
+## 📥 Descarga del Proyecto
 
+1. Asegúrese de tener instalado **XAMPP**.
+2. Ingrese al siguiente repositorio para descargar los archivos del sistema y la base de datos:
 
-Luego de validar de que estén funcionando los servicios, nos dirigimos a nuestro navegador web de preferencia, en la barra de búsqueda colocamos y nos debe cargar el siguiente entorno:
+   👉 [Repositorio del Proyecto](https://github.com/Julian2044/Entrega_Prueba_Fase_III)
 
-Creamos una nueva base de datos con el mismo nombre del archivo .sql que obtuvimos con anterioridad, debe quedar de la siguiente manera:
+3. Descargue y extraiga el archivo `.zip` que contiene el código fuente y la base de datos.
+4. Una vez extraído, ubique el archivo `.sql` dentro de la carpeta correspondiente.
 
+---
 
-Una vez creada la base de datos, nos deber aparecer en la barra lateral que tiene el entorno de la siguiente manera:
+## ⚙️ Configuración del Entorno Local
 
-Ya nos ubicamos en la base de datos que acabamos de crear, es allí donde vamos a importar nuestro archivo .sql, damos en el menú horizontal la opción de importar y nos tiene que mostrar lo siguiente:
+### 1. Verificar Servicios de XAMPP
 
+Abra XAMPP y asegúrese de que los servicios **Apache** y **MySQL** estén activos. Deberían verse en color verde como "Running".
 
-Aquí es donde cargamos el archivo sql, luego le damos importar.
+### 2. Crear la Base de Datos
 
+1. Abra su navegador y acceda a:  
+   `http://localhost/phpmyadmin/`
 
-Para verificar si quedo bien subido el archivo, vamos a la barra lateral que nos debe mostrar las tablas y datos que exportamos, se debe ver de la siguiente manera:
+2. Cree una nueva base de datos con el **mismo nombre** del archivo `.sql` que descargó.
 
+### 3. Importar la Base de Datos
 
-Ya nos queda verificar datos, de las tablas, se tienen que ver de la siguiente manera:
-Usuarios:
+1. Dentro de phpMyAdmin, seleccione la base de datos recién creada.
+2. Vaya al menú superior y haga clic en **Importar**.
+3. Cargue el archivo `.sql` y haga clic en **Importar**.
+4. Verifique que se hayan creado correctamente las siguientes tablas:
 
-Prestamos:
+   - `usuarios`
+   - `prestamos`
+   - `herramientas`
 
-Herramientas:
+---
 
+## 🚀 Despliegue de la Aplicación
 
-Con eso ya sabemos que la información quedo de manera correcta en cada tabla, ya con eso vamos, ahora a cargar nuestro proyecto para comenzar a usar nuestro programa.
-Ahora para hacer el despliegue en nuestro servidor Xammp, de los archivos que descargamos al principio 
-
-Vamos a descomprimir el archivo, prestamos herramientas en la ruta donde esta Xammp, debe quedar así:
-
-
-Apenas se haya terminado de extraer, tiene que quedar así:
-
-
-
-Con eso ya vamos a nuestro navegador y abrimos la siguiente URL: apenas cargue nos debe mostrar algo así:
+1. Extraiga la carpeta del proyecto (por ejemplo, `prestamo_herramientas`) en la siguiente ruta de su equipo:
