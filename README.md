@@ -94,5 +94,100 @@ Antes de comenzar, asegúrese de contar con las siguientes herramientas instalad
 
 ## Acceso a la Aplicación
 
-Una vez copiado el proyecto, abra su navegador y acceda al sistema mediante la siguiente URL:
+Una vez copiado el proyecto, abra su navegador y acceda al sistema mediante la siguiente URL:[http://localhost/prestamo_herramientas/public/login.php](http://localhost/prestamo_herramientas/public/login.php).
+
+
+<!-- Imagen 12: Vista del login del sistema -->
+
+---
+
+## Credenciales de Acceso
+
+### Administrador
+- **Correo:** julian@empresa  
+- **Contraseña:** Bendito24*
+
+---
+
+## Funcionalidades del Sistema
+
+### Panel de Administración
+
+#### 1. Gestión de Usuarios
+- Visualizar todos los usuarios registrados.
+- Crear, editar y eliminar usuarios.
+- Asignar roles de acceso.
+
+<!-- Imagen 13: Gestión de usuarios -->
+
+#### 2. Gestión de Herramientas
+- Visualización de herramientas disponibles.
+- Crear, editar y eliminar herramientas.
+
+<!-- Imagen 14: Gestión de herramientas -->
+
+#### 3. Gestión de Préstamos
+- Visualizar todos los préstamos registrados.
+- Crear nuevos préstamos, modificarlos o marcarlos como devueltos.
+
+<!-- Imagen 15: Gestión de préstamos -->
+
+#### 4. Consulta de Préstamos
+- Ver historial de préstamos por usuario.
+- Consultar estado actual de cada préstamo.
+
+<!-- Imagen 16: Consulta de préstamos -->
+
+---
+
+### Panel del Usuario
+
+Inicie sesión con las siguientes credenciales de prueba:
+
+- **Correo:** steven@empresa.com  
+- **Contraseña:** Bendito24*
+
+<!-- Imagen 17: Vista bienvenida del usuario -->
+
+#### Funcionalidades del Usuario:
+
+##### 📦 Catálogo de Herramientas
+- Visualización de herramientas disponibles y sus cantidades.
+- Este rol no tiene permisos de modificación.
+
+<!-- Imagen 18: Catálogo de herramientas -->
+
+##### 📋 Mis Préstamos
+- Ver todos los préstamos realizados por el usuario.
+- No se permite modificar ni devolver por el rol asignado.
+
+<!-- Imagen 19: Mis préstamos -->
+
+##### ➕ Solicitar Préstamo
+- Permite al usuario solicitar nuevos préstamos desde la plataforma.
+
+<!-- Imagen 20: Solicitud de préstamo -->
+
+##### 🔐 Cambio de Contraseña
+- Visualización de los datos generales del usuario.
+- Permite modificar únicamente la contraseña.
+
+<!-- Imagen 21: Cambio de contraseña -->
+
+---
+
+## Consideraciones Finales
+
+- Verifique siempre que los servicios de Apache y MySQL estén activos antes de usar el sistema.
+- El sistema está optimizado para ejecutarse en un entorno local de desarrollo con XAMPP.
+- Se recomienda cambiar las credenciales por defecto para mayor seguridad.
+
+---
+
+## Autor
+
+**Julian Pérez**  
+Estudiante de Ingeniería de Sistemas  
+GitHub: [Julian2044](https://github.com/Julian2044)
+
 
