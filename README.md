@@ -4,7 +4,7 @@ Este documento proporciona las instrucciones detalladas para instalar y desplega
 
 ---
 
-##  Requisitos Previos
+## ✅ Requisitos Previos
 
 Para ejecutar el proyecto, asegúrese de contar con las siguientes herramientas instaladas en su sistema:
 
@@ -19,14 +19,12 @@ Se recomienda utilizar **XAMPP**, ya que incluye Apache, PHP y MySQL en un solo 
 
 ---
 
-##  Descarga del Proyecto
+## 📥 Descarga del Proyecto
 
-1. Asegúrese de tener instalado **XAMPP**.
-2. Ingrese al siguiente repositorio para descargar los archivos del sistema y la base de datos:
-
-    [Repositorio del Proyecto](https://github.com/Julian2044/Entrega_Prueba_Fase_III)
-
-3. Descargue y extraiga el archivo `.zip` que contiene el código fuente y la base de datos.
+1. Asegúrese de tener instalado **XAMPP**.  
+2. Ingrese al siguiente repositorio para descargar los archivos del sistema y la base de datos:  
+👉 https://github.com/Julian2044/Entrega_Prueba_Fase_III  
+3. Descargue y extraiga el archivo `.zip` que contiene el código fuente y la base de datos.  
 4. Una vez extraído, ubique el archivo `.sql` dentro de la carpeta correspondiente.
 
 ---
@@ -39,24 +37,42 @@ Abra XAMPP y asegúrese de que los servicios **Apache** y **MySQL** estén activ
 
 ### 2. Crear la Base de Datos
 
-1. Abra su navegador y acceda a:  
-   `http://localhost/phpmyadmin/`
-
+1. Abra su navegador y acceda a: `http://localhost/phpmyadmin/`  
 2. Cree una nueva base de datos con el **mismo nombre** del archivo `.sql` que descargó.
 
 ### 3. Importar la Base de Datos
 
-1. Dentro de phpMyAdmin, seleccione la base de datos recién creada.
-2. Vaya al menú superior y haga clic en **Importar**.
-3. Cargue el archivo `.sql` y haga clic en **Importar**.
+1. Dentro de phpMyAdmin, seleccione la base de datos recién creada.  
+2. Vaya al menú superior y haga clic en **Importar**.  
+3. Cargue el archivo `.sql` y haga clic en **Importar**.  
 4. Verifique que se hayan creado correctamente las siguientes tablas:
-
    - `usuarios`
    - `prestamos`
    - `herramientas`
 
 ---
 
-##  Despliegue de la Aplicación
+## 🚀 Despliegue de la Aplicación
 
-1. Extraiga la carpeta del proyecto (por ejemplo, `prestamo_herramientas`) en la siguiente ruta de su equipo:
+1. Extraiga la carpeta del proyecto (por ejemplo, `prestamo_herramientas`) en la siguiente ruta de su equipo:  
+   `C:/xampp/htdocs/`
+
+2. La estructura de carpetas debe verse así:  
+   `C:/xampp/htdocs/prestamo_herramientas/`
+
+3. Abra su navegador y acceda al sistema desde la siguiente URL:  
+   `http://localhost/prestamo_herramientas/public/login.php`
+
+4. Si todo fue configurado correctamente, se mostrará la interfaz de inicio de sesión del sistema.
+
+---
+
+## 🧩 Notas Finales
+
+- Asegúrese de que los nombres de carpetas y archivos no tengan espacios ni caracteres especiales.  
+- Si presenta errores, verifique que las versiones de PHP y MySQL sean compatibles con el código fuente del proyecto.  
+- Para restablecer el entorno, puede eliminar la base de datos y repetir el proceso de importación.
+
+---
+
+© 2025 - Proyecto Sistema de Préstamo de Herramientas
