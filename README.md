@@ -4,7 +4,7 @@ Este documento proporciona las instrucciones detalladas para instalar y desplega
 
 ---
 
-## ✅ Requisitos Previos
+##  Requisitos Previos
 
 Para ejecutar el proyecto, asegúrese de contar con las siguientes herramientas instaladas en su sistema:
 
@@ -19,12 +19,12 @@ Se recomienda utilizar **XAMPP**, ya que incluye Apache, PHP y MySQL en un solo 
 
 ---
 
-## 📥 Descarga del Proyecto
+##  Descarga del Proyecto
 
 1. Asegúrese de tener instalado **XAMPP**.
 2. Ingrese al siguiente repositorio para descargar los archivos del sistema y la base de datos:
 
-   👉 [Repositorio del Proyecto](https://github.com/Julian2044/Entrega_Prueba_Fase_III)
+    [Repositorio del Proyecto](https://github.com/Julian2044/Entrega_Prueba_Fase_III)
 
 3. Descargue y extraiga el archivo `.zip` que contiene el código fuente y la base de datos.
 4. Una vez extraído, ubique el archivo `.sql` dentro de la carpeta correspondiente.
@@ -57,6 +57,6 @@ Abra XAMPP y asegúrese de que los servicios **Apache** y **MySQL** estén activ
 
 ---
 
-## 🚀 Despliegue de la Aplicación
+##  Despliegue de la Aplicación
 
 1. Extraiga la carpeta del proyecto (por ejemplo, `prestamo_herramientas`) en la siguiente ruta de su equipo:
